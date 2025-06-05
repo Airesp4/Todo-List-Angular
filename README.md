@@ -1,27 +1,43 @@
-# TodoList
+# 📋 Projeto de Lista de Tarefas com Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+Este projeto consiste em uma aplicação de **Lista de Tarefas (To-Do List)** desenvolvida com **Angular** e **TypeScript**, como parte da entrega da **Avaliação Auto Instrucional** da disciplina de **Desenvolvimento Web Front End** do curso de **Ciência da Computação** da **Universidade FUMEC**.
 
-## Development server
+## 🎯 Objetivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Criar uma aplicação web dinâmica e responsiva que permita ao usuário adicionar, visualizar e organizar tarefas com diferentes níveis de prioridade, utilizando os conceitos aprendidos em Angular e boas práticas de desenvolvimento front-end.
 
-## Code scaffolding
+## ✅ Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Adicionar nova tarefa com nome, data, categoria e prioridade
+- Exibir tarefas em cartões estilizados
+- Classificação visual por prioridade (Alta, Média, Baixa)
+- Responsividade para dispositivos móveis e janelas com tamanhos reduzidos
+- Estilização moderna com CSS personalizado
+- Scroll interno na lista de tarefas para melhor UX
 
-## Build
+## 🧪 Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Angular 18+](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- HTML5
+- CSS3 (com foco em responsividade e design moderno)
 
-## Running unit tests
+## 📱 Responsividade
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O layout foi cuidadosamente adaptado para oferecer boa usabilidade em:
 
-## Running end-to-end tests
+- 📱 Dispositivos móveis (smartphones)
+- 💻 Telas com largura ou altura reduzida (como janelas pequenas)
+- 🖥️ Telas padrão de desktop
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🏫 Informações Acadêmicas
 
-## Further help
+- **Aluno:** Pedro Augusto
+- **Curso:** Ciência da Computação  
+- **Disciplina:** Desenvolvimento Web Front End  
+- **Atividade:** Avaliação Auto Instrucional  
+- **Instituição:** Universidade FUMEC
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## ✅ Conclusão
+
+O desenvolvimento desta aplicação permitiu a aplicação prática de conceitos essenciais do Angular, reforçando o aprendizado sobre componentização, data binding, eventos, modelagem com TypeScript e responsividade com CSS. A experiência também proporcionou uma melhor compreensão da arquitetura de projetos front-end modernos e do ciclo de vida de componentes. O projeto está funcional, com visual agradável e pronto para ser expandido com novas funcionalidades no futuro.
