@@ -1,0 +1,128 @@
+.task-form-wrapper {
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 60, 120, 0.5);
+  color: #eaf4ff;
+  text-shadow: 0 0 6px #84c8ff, 0 0 10px #cdeeff;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.0rem;
+  color: #eaf4ff;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input,
+select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #ffffffcc;
+  color: #00335a;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 60, 120, 0.3);
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 2px #90caff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+button {
+  background: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: #dc3545;
+}
+
+.cancel-btn:hover {
+  background-color: #bd2130;
+}
+
+.category-suggestions {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-chip {
+  background-color: #eef;
+  padding: 4px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #99c;
+  transition: background-color 0.2s;
+  color: #00335a;
+}
+
+.category-chip:hover {
+  background-color: #cce;
+}
+
+@media (max-width: 480px) {
+  .task-form-wrapper {
+    padding: 1.5rem 1rem;
+    margin: 1rem 1rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  button {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+}

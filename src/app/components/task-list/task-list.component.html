@@ -1,0 +1,39 @@
+<div class="task-header">
+  <h2>Tasks - {{ today }}</h2>
+</div>
+
+<div class="main-content-wrapper">
+  <div class="add-task-button-container">
+    <button (click)="toNewTask()" class="add-button">Add Task</button>
+  </div>
+
+  <div class="task-list-frame">
+    <ng-container *ngIf="tasks.length > 0; else emptyMessage">
+      <div class="task-list-container">
+        <div class="task-card" *ngFor="let task of tasks">
+          <div class="task-priority">
+            <span
+              class="priority-indicator"
+              [ngClass]="getPriorityClass(task.priority)"
+            ></span>
+            {{ task.priority.replace('priority-', '') | titlecase }}
+          </div>
+
+          <div class="task-name">{{ task.name }}</div>
+          <div class="task-date">Due: {{ task.date | date:'mediumDate' }}</div>
+
+          <div class="actions">
+            <button (click)="editTask(task)">Edit</button>
+            <button (click)="deleteTask(task)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-template #emptyMessage>
+      <div class="empty-message">
+        Start now by registering your to-do tasks
+      </div>
+    </ng-template>
+  </div>
+</div>

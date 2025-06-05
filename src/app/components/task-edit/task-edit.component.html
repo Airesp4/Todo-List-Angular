@@ -1,0 +1,54 @@
+<div class="task-edit-container" *ngIf="task">
+  <h2>Editar Tarefa</h2>
+
+  <form #taskForm="ngForm" (ngSubmit)="onSave(task)">
+
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        [(ngModel)]="task.name"
+        required
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="date">Data</label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        [(ngModel)]="task.date"
+        required
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="priority">Prioridade</label>
+      <select
+        id="priority"
+        name="priority"
+        [(ngModel)]="task.priority"
+        required
+        class="form-control"
+      >
+        <option value="low">Baixa</option>
+        <option value="medium">Média</option>
+        <option value="high">Alta</option>
+      </select>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn-save" [disabled]="taskForm.invalid">
+        Salvar
+      </button>
+      <button type="button" class="btn-cancel" (click)="onCancel()">
+        Cancelar
+      </button>
+    </div>
+  </form>
+</div>
